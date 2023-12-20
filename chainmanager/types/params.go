@@ -33,7 +33,7 @@ var _ subspace.ParamSet = &Params{}
 // ChainParams chain related params
 type ChainParams struct {
 	BorChainID            string                  `json:"bor_chain_id" yaml:"bor_chain_id"`
-	MaticTokenAddress     hmTypes.HeimdallAddress `json:"matic_token_address" yaml:"matic_token_address"`
+	MaticTokenAddress     hmTypes.HeimdallAddress `json:"rama_token_address" yaml:"rama_token_address"`
 	StakingManagerAddress hmTypes.HeimdallAddress `json:"staking_manager_address" yaml:"staking_manager_address"`
 	SlashManagerAddress   hmTypes.HeimdallAddress `json:"slash_manager_address" yaml:"slash_manager_address"`
 	RootChainAddress      hmTypes.HeimdallAddress `json:"root_chain_address" yaml:"root_chain_address"`
@@ -62,7 +62,7 @@ func (cp ChainParams) String() string {
 // Params defines the parameters for the chainmanager module.
 type Params struct {
 	MainchainTxConfirmations  uint64      `json:"mainchain_tx_confirmations" yaml:"mainchain_tx_confirmations"`
-	MaticchainTxConfirmations uint64      `json:"maticchain_tx_confirmations" yaml:"maticchain_tx_confirmations"`
+	MaticchainTxConfirmations uint64      `json:"ramesttachain_tx_confirmations" yaml:"ramesttachain_tx_confirmations"`
 	ChainParams               ChainParams `json:"chain_params" yaml:"chain_params"`
 }
 
@@ -105,7 +105,7 @@ func (p Params) String() string {
 
 // Validate checks that the parameters have valid values.
 func (p Params) Validate() error {
-	if err := validateHeimdallAddress("matic_token_address", p.ChainParams.MaticTokenAddress); err != nil {
+	if err := validateHeimdallAddress("rama_token_address", p.ChainParams.MaticTokenAddress); err != nil {
 		return err
 	}
 

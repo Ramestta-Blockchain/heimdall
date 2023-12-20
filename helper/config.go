@@ -122,7 +122,7 @@ var conf Configuration
 var mainChainClient *ethclient.Client
 var mainRPCClient *rpc.Client
 
-// MaticClient stores eth/rpc client for Matic Network
+// MaticClient stores eth/rpc client for Ramestta Network
 var maticClient *ethclient.Client
 var maticRPCClient *rpc.Client
 
@@ -255,7 +255,7 @@ func SetTestConfig(_conf Configuration) {
 }
 
 //
-// Get main/matic clients
+// Get main/rama clients
 //
 
 // GetMainChainRPCClient returns main chain RPC client

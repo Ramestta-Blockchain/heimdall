@@ -1,6 +1,6 @@
 {
   "genesis_time": "2020-05-30T04:28:03.177054Z",
-  "chain_id": "heimdall-137",
+  "chain_id": "heimdall-1370",
   "consensus_params": {
     "block": {
       "max_bytes": "22020096",
@@ -33,7 +33,7 @@
           "address": "0x5973918275c01f50555d44e92c9d9b353cadad54",
           "coins": [
             {
-              "denom": "matic",
+              "denom": "rama",
               "amount": "10000000000000000000"
             }
           ],
@@ -46,7 +46,7 @@
           "address": "0xb8bb158b93c94ed35c1970d610d1e2b34e26652c",
           "coins": [
             {
-              "denom": "matic",
+              "denom": "rama",
               "amount": "10000000000000000000"
             }
           ],
@@ -59,7 +59,7 @@
           "address": "0xf84c74dea96df0ec22e11e7c33996c73fcc2d822",
           "coins": [
             {
-              "denom": "matic",
+              "denom": "rama",
               "amount": "10000000000000000000"
             }
           ],
@@ -72,7 +72,7 @@
           "address": "0xb702f1c9154ac9c08da247a8e30ee6f2f3373f41",
           "coins": [
             {
-              "denom": "matic",
+              "denom": "rama",
               "amount": "10000000000000000000"
             }
           ],
@@ -85,7 +85,7 @@
           "address": "0x7fcd58c2d53d980b247f1612fdba93e9a76193e6",
           "coins": [
             {
-              "denom": "matic",
+              "denom": "rama",
               "amount": "10000000000000000000"
             }
           ],
@@ -98,7 +98,7 @@
           "address": "0x0375b2fc7140977c9c76d45421564e354ed42277",
           "coins": [
             {
-              "denom": "matic",
+              "denom": "rama",
               "amount": "10000000000000000000"
             }
           ],
@@ -111,7 +111,7 @@
           "address": "0x42eefcda06ead475cde3731b8eb138e88cd0bac3",
           "coins": [
             {
-              "denom": "matic",
+              "denom": "rama",
               "amount": "10000000000000000000"
             }
           ],
@@ -293,10 +293,10 @@
     "chainmanager": {
       "params": {
         "mainchain_tx_confirmations": "6",
-        "maticchain_tx_confirmations": "10",
+        "ramesttachain_tx_confirmations": "10",
         "chain_params": {
           "bor_chain_id": "137",
-          "matic_token_address": "0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0",
+          "rama_token_address": "0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0",
           "staking_manager_address": "0x88F65097BA6E10F25E93bf41987f9416BBB303eB",
           "slash_manager_address": "0xbfAEa5DCcbA49DB25A9F9DD0E4245Ba7b1858aB4",
           "root_chain_address": "0x86E4Dc95c7FBdBf52e33D563BbDB00823894C287",
@@ -331,7 +331,7 @@
       "deposit_params": {
         "min_deposit": [
           {
-            "denom": "matic",
+            "denom": "rama",
             "amount": "100000000000000000000"
           }
         ],

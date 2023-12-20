@@ -182,7 +182,7 @@ func (c *ContractCaller) StakeFor(val common.Address, stakeAmount *big.Int, feeA
 	return nil
 }
 
-// ApproveTokens approves matic token for stake
+// ApproveTokens approves rama token for stake
 func (c *ContractCaller) ApproveTokens(amount *big.Int, stakeManager common.Address, tokenAddress common.Address, maticTokenInstance *erc20.Erc20) error {
 	data, err := c.MaticTokenABI.Pack("approve", stakeManager, amount)
 	if err != nil {

@@ -296,7 +296,7 @@ func (c *ContractCaller) GetRootHash(start uint64, end uint64, checkpointLength 
 
 	rootHash, err := c.MaticChainClient.GetRootHash(context.Background(), start, end)
 	if err != nil {
-		return nil, errors.New("Could not fetch roothash from matic chain")
+		return nil, errors.New("Could not fetch roothash from ramestta chain")
 	}
 
 	return common.FromHex(rootHash), nil
@@ -373,7 +373,7 @@ func (c *ContractCaller) GetMainChainBlock(blockNum *big.Int) (header *ethTypes.
 func (c *ContractCaller) GetMaticChainBlock(blockNum *big.Int) (header *ethTypes.Header, err error) {
 	latestBlock, err := c.MaticChainClient.HeaderByNumber(context.Background(), blockNum)
 	if err != nil {
-		Logger.Error("Unable to connect to matic chain", "Error", err)
+		Logger.Error("Unable to connect to ramestta chain", "Error", err)
 		return
 	}
 	return latestBlock, nil
@@ -728,7 +728,7 @@ func (c *ContractCaller) GetMainTxReceipt(txHash common.Hash) (*ethTypes.Receipt
 	return c.getTxReceipt(c.MainChainClient, txHash)
 }
 
-// GetMaticTxReceipt returns matic tx receipt
+// GetMaticTxReceipt returns rama tx receipt
 func (c *ContractCaller) GetMaticTxReceipt(txHash common.Hash) (*ethTypes.Receipt, error) {
 	return c.getTxReceipt(c.MaticChainClient, txHash)
 }

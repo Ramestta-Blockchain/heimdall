@@ -16,10 +16,10 @@ import (
 // Parameter keys
 const (
 	MainchainTxConfirmations  = "mainchain_tx_confirmations"
-	MaticchainTxConfirmations = "maticchain_tx_confirmations"
+	MaticchainTxConfirmations = "ramesttachain_tx_confirmations"
 
 	BorChainID            = "bor_chain_id"
-	MaticTokenAddress     = "matic_token_address"
+	MaticTokenAddress     = "rama_token_address"
 	StakingManagerAddress = "staking_manager_address"
 	SlashManagerAddress   = "slash_manager_address"
 	RootChainAddress      = "root_chain_address"

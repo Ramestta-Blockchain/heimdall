@@ -105,7 +105,7 @@ func (tb *TxBroadcaster) BroadcastToMatic(msg bor.CallMsg) error {
 	tb.maticMutex.Lock()
 	defer tb.maticMutex.Unlock()
 
-	// get matic client
+	// get rama client
 	maticClient := helper.GetMaticClient()
 
 	// get auth
